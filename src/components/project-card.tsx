@@ -35,9 +35,9 @@ interface Props {
   image?: string;
   video?: string;
   links?: readonly {
-    icon: React.ReactNode;
+    icon?: React.ReactNode;
     type: string;
-    href: string;
+    href?: string;
   }[];
   className?: string;
 }
@@ -58,7 +58,7 @@ export function ProjectCard({
     <div
       className={cn(
         "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
-        className
+        className,
       )}
     >
       <div className="relative shrink-0">
@@ -85,23 +85,34 @@ export function ProjectCard({
         </Link>
         {links && links.length > 0 && (
           <div className="absolute top-2 right-2 flex flex-wrap gap-2">
-            {links.map((link, idx) => (
-              <Link
-                href={link.href}
-                key={idx}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
+            {links.map((link, idx) =>
+              !link.href ? (
                 <Badge
+                  key={idx}
                   className="flex items-center gap-1.5 text-xs bg-black text-white hover:bg-black/90"
                   variant="default"
                 >
                   {link.icon}
                   {link.type}
                 </Badge>
-              </Link>
-            ))}
+              ) : (
+                <Link
+                  href={link.href}
+                  key={idx}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <Badge
+                    className="flex items-center gap-1.5 text-xs bg-black text-white hover:bg-black/90"
+                    variant="default"
+                  >
+                    {link.icon}
+                    {link.type}
+                  </Badge>
+                </Link>
+              ),
+            )}
           </div>
         )}
       </div>
