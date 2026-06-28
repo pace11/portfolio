@@ -78,7 +78,7 @@ export const DATA = {
       logoUrl: "/new/hyperscal.png",
       start: "August 2025",
       end: "Present",
-      description: "",
+      description: "Designed and developed a scalable multi-tenant authentication platform with SSO (Google & Microsoft), secure multi-device session management, and configurable tenant settings for web and mobile applications.",
     },
     {
       company: "Sanbercode",
@@ -90,7 +90,7 @@ export const DATA = {
       start: "October 2023",
       end: "September 2025",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Mentored over 200 students in Next.js by providing technical guidance, code reviews, and hands-on support to help them build production-ready frontend applications.",
     },
     {
       company: "eFishery",
@@ -102,7 +102,7 @@ export const DATA = {
       start: "March 2022",
       end: "February 2025",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+        "Contributed as an Individual Contributor by developing internal platforms, enhancing GraphQL architecture, building Go-based APIs, and improving development workflows through CI/CD, code quality, and observability initiatives.",
     },
     {
       company: "Female Daily Network",
@@ -114,7 +114,7 @@ export const DATA = {
       start: "January 2020",
       end: "March 2022",
       description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
+        "Led a team of three frontend engineers to modernize the authentication system, implement a monorepo architecture, and establish CI/CD pipelines that improved development efficiency and deployment reliability.",
     },
     {
       company: "Ralali.com",
@@ -126,7 +126,7 @@ export const DATA = {
       start: "March 2019",
       end: "December 2019",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Developed mobile-first React.js applications while building a reusable UI component library with Storybook and leading key CMS interface improvements to enhance user experience.",
     },
     {
       company: "Disitu.com",
@@ -138,7 +138,7 @@ export const DATA = {
       start: "September 2018",
       end: "February 2019",
       description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+        "Enhanced Disitu.com by improving application performance, maintaining key financial product pages, and ensuring code quality through clean development practices, debugging, and code reviews.",
     },
   ],
   education: [
