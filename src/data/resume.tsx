@@ -15,7 +15,7 @@ import { Csharp } from "@/components/ui/svgs/csharp";
 export const DATA = {
   name: "Iriansyah",
   initials: "IP",
-  url: "https://www.pace11.my.id",
+  url: "https://pace11.my.id",
   location: "Tangerang, Banten, Indonesia",
   locationLink:
     "https://www.google.com/maps/place/Tangerang,+Banten,+Indonesia",
@@ -78,7 +78,8 @@ export const DATA = {
       logoUrl: "/new/hyperscal.png",
       start: "August 2025",
       end: "Present",
-      description: "Designed and developed a scalable multi-tenant authentication platform with SSO (Google & Microsoft), secure multi-device session management, and configurable tenant settings for web and mobile applications.",
+      description:
+        "Designed and developed a scalable multi-tenant authentication platform with SSO (Google & Microsoft), secure multi-device session management, and configurable tenant settings for web and mobile applications.",
     },
     {
       company: "Sanbercode",
@@ -183,6 +184,76 @@ export const DATA = {
         // },
       ],
       image: "/projects/world-cup.gif",
+      video: "",
+    },
+    {
+      title: "Pace App Dockerized",
+      href: "https://github.com/pace11/pace-app-neo",
+      dates: "July 2025",
+      active: true,
+      description:
+        "Docker Compose setup for running backend, frontend, databases (MySQL & PostgreSQL), NGINX, and other self-hosted services in a scalable, modular environment.",
+      technologies: [
+        "docker-compose",
+        "nginx",
+        "postgresql",
+        "mysql",
+        "certbot",
+        "github-actions",
+      ],
+      links: [
+        {
+          type: "Infrastructure",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/pace-app-neo",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/pace-server.gif",
+      video: "",
+    },
+    {
+      title: "PassQ CLI",
+      href: "https://github.com/pace11/passq",
+      dates: "March 2025",
+      active: true,
+      description:
+        "A simple CLI library built with JavaScript, Commander, and SQLite for managing passwords.",
+      technologies: ["javascript", "commander", "sqlite", "cli"],
+      links: [
+        {
+          type: "Library",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/passq",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/passq.png",
+      video: "",
+    },
+    {
+      title: "Blamescope",
+      href: "https://github.com/pace11/blamescope",
+      dates: "May 2026",
+      active: true,
+      description:
+        "Component-level git blame overlay for React projects (Vite & Next.js).",
+      technologies: ["javascript", "typescript", "react.js"],
+      links: [
+        {
+          type: "Library",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/blamescope",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/blamescope.gif",
       video: "",
     },
   ],
