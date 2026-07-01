@@ -15,3 +15,12 @@ export function formatDate(date: string | Date) {
     timeZone: "UTC",
   });
 }
+
+export function formatDateShort(date: string | Date) {
+  const dateObj = typeof date === "string" ? new Date(date) : date;
+  return dateObj.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    timeZone: "UTC",
+  });
+}

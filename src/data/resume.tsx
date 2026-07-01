@@ -8,9 +8,6 @@ import { Python } from "@/components/ui/svgs/python";
 import { Golang } from "@/components/ui/svgs/golang";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
 import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
   name: "Iriansyah",
@@ -156,13 +153,13 @@ export const DATA = {
     {
       title: "World Cup Map Visualizer",
       href: "https://world-cup.pace11.my.id/",
-      dates: "June 2026",
+      dates: "2026-06-01",
       active: true,
       description:
         "Explore FIFA World Cup matches on an interactive world map. Browse tournament history, group stages, knockout rounds, and match details with an immersive geographic visualization",
       technologies: [
         "Next.js",
-        "Typescript",
+        "TypeScript",
         "Leaflet.js",
         "TailwindCSS",
         "Zustand",
@@ -187,9 +184,41 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Landing Page & Dashboard PLN UIP3B Sumatera",
+      href: "https://www.infouip3bs.com",
+      dates: "2025-07-01",
+      active: true,
+      description:
+        "Developed and maintained a monitoring dashboard and user-facing web application for PLN UIP3B Sumatera using Next.js. Built responsive interfaces for field officer performance monitoring and synchronized field data, while integrating with Laravel, MySQL, NGINX, and MinIO services.",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "Redux",
+        "JavaScript",
+        "Ant Design",
+        "TailwindCSS",
+        "MySQL",
+        "Laravel",
+        "NGINX",
+        "MinIO",
+      ],
+      links: [
+        {
+          type: "Fullstack App",
+        },
+        {
+          type: "Website",
+          href: "https://www.infouip3bs.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/pln.gif",
+      video: "",
+    },
+    {
       title: "Pace App Dockerized",
       href: "https://github.com/pace11/pace-app-neo",
-      dates: "July 2025",
+      dates: "2025-07-01",
       active: true,
       description:
         "Docker Compose setup for running backend, frontend, databases (MySQL & PostgreSQL), NGINX, and other self-hosted services in a scalable, modular environment.",
@@ -217,7 +246,7 @@ export const DATA = {
     {
       title: "PassQ CLI",
       href: "https://github.com/pace11/passq",
-      dates: "March 2025",
+      dates: "2025-03-01",
       active: true,
       description:
         "A simple CLI library built with JavaScript, Commander, and SQLite for managing passwords.",
@@ -238,11 +267,18 @@ export const DATA = {
     {
       title: "Blamescope",
       href: "https://github.com/pace11/blamescope",
-      dates: "May 2026",
+      dates: "2026-05-01",
       active: true,
       description:
         "Component-level git blame overlay for React projects (Vite & Next.js).",
-      technologies: ["javascript", "typescript", "react.js"],
+      technologies: [
+        "javascript",
+        "typescript",
+        "react.js",
+        "vite",
+        "next.js",
+        "git",
+      ],
       links: [
         {
           type: "Library",
@@ -254,6 +290,154 @@ export const DATA = {
         },
       ],
       image: "/projects/blamescope.gif",
+      video: "",
+    },
+    {
+      title: "Readable",
+      href: "https://readable.pace11.my.id",
+      dates: "2025-08-01",
+      active: true,
+      description:
+        "A modern news application built with React, TypeScript, and Vite, featuring NYT API integration, state management with Zustand, automated CI using GitHub Actions, testing with Vitest, and containerized deployment with Docker.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Vite",
+        "Vitest",
+        "Bun",
+        "TailwindCSS",
+        "Zustand",
+        "GitHub Actions",
+        "Dockerfile",
+      ],
+      links: [
+        {
+          type: "Frontend",
+        },
+        {
+          type: "Website",
+          href: "https://readable.pace11.my.id",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/readable",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/readable.gif",
+      video: "",
+    },
+    {
+      title: "Jobs Seeker",
+      href: "https://jobs.pace11.my.id",
+      dates: "2025-08-01",
+      active: true,
+      description:
+        "A full-stack job seeker dashboard built with Next.js, featuring secure authentication with NextAuth and JWT, PostgreSQL database integration through Drizzle ORM, and a responsive user experience.",
+      technologies: ["Next.js", "TypeScript", "NextAuth", "Drizzle ORM", "JWT", "PostgreSQL"],
+      links: [
+        {
+          type: "Fullstack App",
+        },
+        {
+          type: "Website",
+          href: "https://jobs.pace11.my.id",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/jobs-seeker",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/jobs-seeker.gif",
+      video: "",
+    },
+    {
+      title: "Recipe Foods Web & Api",
+      href: "https://recipe-foods.pace11.my.id",
+      dates: "2024-10-01",
+      active: true,
+      description:
+        "A full-stack recipe-sharing application built with Next.js and Golang, featuring JWT authentication, RESTful APIs, MySQL with GORM, Zustand for state management, and CI/CD with GitHub Actions and Docker.",
+      technologies: [
+        "Golang",
+        "JWT",
+        "REST API",
+        "GORM",
+        "MySQL",
+        "Next.js",
+        "TypeScript",
+        "Zustand",
+        "Dockerfile",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Fullstack App",
+        },
+        {
+          type: "Website",
+          href: "https://recipe-foods.pace11.my.id",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/recipe-foods.gif",
+      video: "",
+    },
+    {
+      title: "BMKG Weather API Wrapper",
+      href: "https://github.com/pace11/weather-api",
+      dates: "2025-07-01",
+      active: true,
+      description:
+        "A GraphQL wrapper for BMKG weather data, built with Express.js to simplify API consumption while providing REST endpoints and interactive API documentation with Swagger.",
+      technologies: [
+        "REST API",
+        "GraphQL",
+        "Swagger",
+        "Express.js",
+        "JavaScript",
+      ],
+      links: [
+        {
+          type: "Backend GraphQL",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/weather-api",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/weather-api.png",
+      video: "",
+    },
+    {
+      title: "Cloudflare R2 Upload Service",
+      href: "https://github.com/pace11/cycloop",
+      dates: "2025-07-01",
+      active: true,
+      description:
+        "A lightweight file upload service built with TypeScript and Express.js, exposing REST APIs with Swagger documentation and integrating the AWS S3 SDK for Cloudflare R2 object storage.",
+      technologies: [
+        "TypeScript",
+        "Express.js",
+        "REST API",
+        "Swagger",
+        "Cloudflare R2",
+      ],
+      links: [
+        {
+          type: "Backend Service",
+        },
+        {
+          type: "Source",
+          href: "https://github.com/pace11/cycloop",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/cycloop.png",
       video: "",
     },
   ],
